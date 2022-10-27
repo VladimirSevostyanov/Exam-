@@ -1,28 +1,31 @@
 #include <iostream>
-#include "list.h"
+#include "complex.h"
 
 using namespace std;
+
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
+    Complex c1, c2;
+	//РІРІРѕРґРёРј РґРІР° С‡РёСЃР»Р°
+	cout << "вЂћРёСЃР»Рѕ С”1\n";
+	c1 = input_complex();
+	cout << "\nвЂћРёСЃР»Рѕ С”2\n";
+	c2 = input_complex();
 
-    //пустой список
-    Node<int>* list;
-    init_list(list);
+	cout << "\nc1: "; c1.print();
+    cout << "\nc2: "; c2.print();
 
-    //заполняем
-    int n, t;
-    cout << "Введите количество элементов в списке: ";
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        cout << "Введите элемент #" << i << ": ";
-        cin >> t;
-        add_list(list, t); //добавляем в список
-    }
-    cout << "\nПолучен список:\n";
-    print_list(list); //вывод списка
-    free_list(list); //очистка памяти
+	//РІС‹РїРѕР»РЅВ¤РµРј РѕРїРµСЂР°С†РёРё Рё СЃСЂР°Р·Сѓ РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
+	cout << "\nСЃСѓРјРјР°: ";
+	sum(c1, c2).print();
+    cout << "\nСЂР°Р·РЅРѕСЃС‚СЊ: ";
+	sub(c1, c2).print();
+	cout << "\nРїСЂРѕРёР·РІРµРґРµРЅРёРµ: ";
+	mult(c1, c2).print();
+	cout << "\nРґРµР»РµРЅРёРµ: ";
+	div(c1, c2).print();
+	cout << endl;
     return 0;
 }
