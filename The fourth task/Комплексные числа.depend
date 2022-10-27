@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1666861612 source:d:\decy\work\c++ (online)\Факториал, умножение, список 27.10.22\Комплексные числа\complex.cpp
-	"Complex.h"
-	<math.h>
-	<iostream>
-
-1666861748 d:\decy\work\c++ (online)\Факториал, умножение, список 27.10.22\Комплексные числа\complex.h
-	<iostream>
-
